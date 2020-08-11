@@ -16,7 +16,7 @@ Calculator c2 = new Calculator(); c2는 Calculator 클래스의 인스턴스이�
 
 클래스에 선언된 모양 그대로 생성된 실체. ‘클래스의 인스턴스(instance)’ 라고도 부른다.
 
- Calculator c1; c1은 객체이다.
+Calculator c1; c1은 객체이다.
 
 
 
@@ -43,5 +43,4 @@ public class Main
 }
 ```
 
-
-
+클래스의 타입으로 선언되었을 때 객체라고 부르고, 그 객체가 메모리에 할당되어 실제 사용될 때 인스턴스라고 부른다.
