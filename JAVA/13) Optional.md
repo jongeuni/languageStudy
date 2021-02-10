@@ -53,7 +53,7 @@ Optional<String> val3 = Optional.ofNullable(null);
   ```java
 orElse(T ob)
   orElse(Supplier<? extends T> ob)
-```
+  ```
   
   Optional 클래스 객체가 가지고 있는 값이 NULL일 경우 어떤 값으로 대체해서 return 할 지 정의해 줄 수 있다.
   
@@ -62,10 +62,9 @@ orElse(T ob)
   System.out.println(opt.orElse("빈 Optional 객체"));
   ```
   
-  메소드를 파라미터로 넘길 경우 차이가 발생하는데, orElse()는 Optional 객체가 null이어도 메소드가 실행되고, orElseGet은 메소드가 실행되지 않는다.
+   메소드를 파라미터로 넘길 경우 차이가 발생하는데, orElse()는 Optional 객체가 **null이어도 메소드가 실행**되고, orElseGet은 메소드가 실행되지 않는다.
   
   > orElse에 메소드가 넘어가면 메소드로 인식해서 그 메소드를 실행시킴. 메소드의 return 값을 파라미터로 사용. 그래서 null이던 아니던 우선 실행한다.
-
 - orElseThrow(예외)
 
   get()과 비슷한데 예외 종류를 지정 가능하다.
